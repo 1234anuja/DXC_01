@@ -1,0 +1,33 @@
+CREATE DATABASE DXC_DB
+
+SHOW DATABASES
+
+USE DXC_DB
+CREATE TABLE marks (
+	roll CHAR(5),
+	NAME CHAR(30),
+	phy  INT,
+	che  INT,
+	math INT
+) 
+
+INSERT INTO marks VALUES ('101', 'Suresh Kumar', 78, 56, 90)
+
+SELECT * FROM marks 
+
+INSERT INTO marks VALUES ('102', 'Minal ', 77, 88, 66)
+
+SELECT * FROM marks
+
+SELECT roll, NAME FROM marks
+
+SELECT * FROM marks WHERE che > 70
+
+UPDATE marks SET math = 85 WHERE roll = '101'
+
+SELECT * FROM marks
+
+DELETE FROM marks WHERE roll = '102'
+
+SELECT * FROM marks
+
